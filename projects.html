@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects | David Finecy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">← Home</a>
+        <h1>Projects</h1>
+        <p>Filter by category.</p>
+    </header>
+
+    <section class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="stats">Statistics</button>
+        <button class="filter-btn" data-filter="econ">Econometrics</button>
+        <button class="filter-btn" data-filter="net">Networking</button>
+    </section>
+
+    <section id="project-list" class="project-list">
+        <div class="project-card" data-tags="stats econ">
+            <h3>GDP and Suicide Rates</h3>
+            <p>Panel regression + controls.</p>
+            <a href="#">Read</a>
+        </div>
+
+        <div class="project-card" data-tags="ml">
+            <h3>Emotion Detection on Reddit</h3>
+            <p>Text preprocessing + transformer models.</p>
+            <a href="#">Read</a>
+        </div>
+
+        <div class="project-card" data-tags="net">
+            <h3>Space Networking Notes</h3>
+            <p>Concepts from networking class applied to satellites.</p>
+            <a href="#">Read</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
